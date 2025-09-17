@@ -32,7 +32,9 @@ public class userInput {
 			System.out.println("Hello "+name);
 			System.out.println("Your age is "+age);
 			System.out.println("Your gpa is "+gpa);
-			scanner.close();
+			
+			
+			scanner.close(); //close the scanner to avoid errors. 
 			
 			
 			if(isStudent) {

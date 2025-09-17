@@ -18,6 +18,8 @@ public class Test {
 			
 			System.out.println("Enter Number 3");
 			num3 = x.nextInt();
+			
+			x.close(); //closing the scanner object. 
 		}
 		
 		
@@ -28,6 +30,8 @@ public class Test {
 
         // Print the result
         System.out.println("The sum of " + num1 + ", " + num2 + ", and " + num3 + " is " + sum);
+        
+   
 	}
 
 }
