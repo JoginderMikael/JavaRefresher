@@ -13,10 +13,11 @@ public class Main {
 		int yourAge = myMethod.age(scanner);
 		String yourCity = myMethod.City(scanner);
 		
-		
+		System.out.println("\n====HERE ARE THE SUMMARIES======");
 		System.out.println("Your name is " + yourName + ".");
 		System.out.println("Your age is " + yourAge + ".");
 		System.out.println("You live in " + yourCity + " City");
+		System.out.println("==============END==============");
 		
 		scanner.close();
 
