@@ -32,13 +32,13 @@ public class myMethod {
 	
 	public static String City(Scanner scanner) {
 	
-	String city;
+		String city;
 	
-	//Scanner scanner = new Scanner(System.in);
-	System.out.print("Enter your city: ");
-	city = scanner.nextLine();
+		//Scanner scanner = new Scanner(System.in);
+		System.out.print("Enter your city: ");
+		city = scanner.nextLine();
 	
-	return city;
+		return city;
 }
 
 }
