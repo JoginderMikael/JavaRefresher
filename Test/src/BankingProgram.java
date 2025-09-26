@@ -58,7 +58,7 @@ public class BankingProgram {
 					//isRunning = false;
 				}
 				case 4 -> isRunning = false;
-				default -> System.out.println("/nInvalid Choice. Enter value between 1 and 4.");
+				default -> System.out.println("\nInvalid Choice. Enter value between 1 and 4.");
 		}
 		
 			}
