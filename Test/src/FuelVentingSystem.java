@@ -6,7 +6,7 @@ public class FuelVentingSystem {
 	
 	public static void main(String[] args) {
 		// DECLARE VARIABLES
-		//CREATE A METHOD TO PUMP if Litres entered 
+		//CREATE A METHOD TO PUMP if Liters entered 
 		// Method to pump if amount entered
 	
 		double price = 3.5;
@@ -102,7 +102,7 @@ public class FuelVentingSystem {
 		amount = scanner.nextDouble();
 		System.out.println("Filling your tank with $" + amount + " worth of fuel. Please wait...");
 		litres = amount/price;
-		//FuelVentingSystem fueling = new FuelVentingSystem();
+		
 		
 		try {
 			
