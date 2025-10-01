@@ -20,7 +20,7 @@ public class MultiplicationTableGenerator {
 		
 		//generate the multiplication table
 		for (int i = 0; i < 10; i++) {
-			table [i] = num * i;
+			table [i] = num * (i+1);
 	
 		}
 		
@@ -28,7 +28,7 @@ public class MultiplicationTableGenerator {
 		//output
 		System.out.println("Multiplication Table of " + num + ":");
         for (int i = 0; i < 10; i++) {
-            System.out.println(num + " x " + (i + 1) + " = " + table[i]);
+            System.out.println(num + " x " + (i+1) + " = " + table[i]);
         }
 		
 
