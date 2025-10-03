@@ -1,6 +1,5 @@
 package schoolManagementSystem;
 
-import java.util.Arrays;
 
 public class Teacher extends Person{
 
@@ -25,14 +24,14 @@ public class Teacher extends Person{
 	}
 	
 	
-	public void raiseSalary(double salary) {
-		if(salary <= 35000) {
+	public String raiseSalary(double salary) {
+		if(this.salary <= 35000) {
 			
-			salary += (0.10 * salary);
-			System.out.println("The Teacher salary is increased by 10 percent to " + salary);
+			this.salary += (0.10 * this.salary);
+			return "The Teacher salary is increased by 10 percent to " + this.salary;
 		}else {
-			salary += (0.05 * salary);
-			System.out.println("The Teacher salary increased by 5 percent to " + salary);
+			this.salary += (0.05 * this.salary);
+			return "The Teacher salary increased by 5 percent to " + this.salary;
 		}
 	}
 	
@@ -41,7 +40,7 @@ public class Teacher extends Person{
 	
 	@Override
 	public String toString() {
-		return "The teacher " + this.name  +" and teaches " + String.join(" and ", this.subjectTaught)  + " subjects.";
+		return "The teacher " + this.name  +" and teaches " + String.join(" and ", this.subjectTaught)  + " subjects. " + this.raiseSalary(this.salary);
 	}
 
 }
