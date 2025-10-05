@@ -16,7 +16,12 @@ public class Main {
 		//FileWriter
 		
 		String filePath = "C:\\Users\\ADMIN\\Desktop\\test.txt";
-		String textContent = "I like Pizza.\n It's really good!";
+		String textContent = """
+				Roses are Red
+				Violets are Blue
+				BOOTY BOOTY BOOTY
+				ROCKIN' EVERYWHERE!
+				""";
 		
 		try (FileWriter writer = new FileWriter (filePath)) {
 			writer.write(textContent);
