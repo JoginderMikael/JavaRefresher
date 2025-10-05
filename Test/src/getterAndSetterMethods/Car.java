@@ -32,6 +32,7 @@ public class Car {
 	void setColor(String color) {
 		this.color = color;
 	}
+	
 	void setPrice(int price) {
 		if(price<0) {
 			System.out.println("Price cant be less than zero");
