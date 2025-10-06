@@ -35,7 +35,9 @@ public class Main {
 		
 		
 		Scanner scanner = new Scanner(System.in);
+	
 		ArrayList<Character> wordState = new ArrayList<>();
+		
 		int wrongGuesses = 0;
 		
 		for(int i = 0; i < word.length(); i++) {
@@ -46,6 +48,7 @@ public class Main {
 		
 		System.out.println("************************");
 		System.out.println("WELCOME TO JAVA HANGMAN");
+		System.out.println("GUESS LETTERS TO FORM A WORD");
 		System.out.println("************************");
 		
 	while(wrongGuesses < 6) {
