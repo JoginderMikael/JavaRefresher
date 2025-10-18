@@ -6,7 +6,7 @@ import java.util.List;
 
 
 
-public class Main {
+public class Lists {
 
 	public static void main(String[] args) {
 		// Collection API - Collections Framework (concept).. Useful in data structures.
