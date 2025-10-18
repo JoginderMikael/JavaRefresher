@@ -35,7 +35,7 @@ public class Sets {
 		
 		System.out.println("The shorted values " + nums1); //Will not print sorted values
 		
-		//Using collection and Treeset
+		//Using collection and TreeSet
 		
 		Collection <Integer> nums2 = new TreeSet<>();
 		
