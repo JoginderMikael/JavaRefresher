@@ -31,6 +31,13 @@ public class PriorityQueues {
 		}
 		
 		
+		//When to use priority queues:
+		//1. Task scheduling (tasks with higher priority are executed first)
+		//2. Dijkstra's algorithm (finding the shortest path in a graph)
+		//3. Huffman coding (data compression algorithm) - building optimal prefix codes
+		//4. Event-driven simulation (events with higher priority are processed first)
+		
+		
 	}
 
 }
