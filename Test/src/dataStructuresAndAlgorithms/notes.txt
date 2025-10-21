@@ -15,7 +15,7 @@ Example: Baking a pizza
 		
 		Linear search one by one, example elements of an array to find a value. 
 		
-Why Learn data structures and algorithsm?
+Why Learn data structures and algorithms?
 
 	1. To write a code that is both time and memory efficient. 
 	2. commonely asked questions involve the use of data structures and algorithsms in coding interviews. 
