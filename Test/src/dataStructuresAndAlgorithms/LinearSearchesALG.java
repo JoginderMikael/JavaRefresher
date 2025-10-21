@@ -21,7 +21,7 @@ public class LinearSearchesALG {
 		 */
 		
 		int[] array = {34, 2, 10, -9, 5, 67, 23};
-		int index = linearSearch(array, 100);
+		int index = linearSearch(array, 2);
 		
 		if(index != -1) {
 			System.out.println("Element Found at index " + index);

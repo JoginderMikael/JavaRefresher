@@ -16,7 +16,7 @@ public class recurssive {
 	
 	//non recursive method - Faster O(1) for both space and time complexity
 	//Good for larnge numbers
-	static long sum2(long number) {
+	static int sum2(int number) {
 		if(number > 0) {
 			return (number*(number+1))/2;
 			
@@ -36,6 +36,14 @@ public class recurssive {
 		}
 	}
 	
+	static int sum4(int number) {
+		int sum = 0;
+		for(int i = 0; i <= number; i++) {
+			sum +=i;
+		}
+		return sum;
+	}
+	
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		BigInteger number = new BigInteger("100000000000000000");
@@ -43,6 +51,9 @@ public class recurssive {
 		//System.out.println(sum(10009L));
 		long endTime = System.nanoTime();
 		System.out.println("Execution time: " + (endTime - startTime) / 1_000_000.0 + " ms");
+		
+		System.out.println(sum4(4));
+		System.out.println(sum2(4));
 
 	}
 
