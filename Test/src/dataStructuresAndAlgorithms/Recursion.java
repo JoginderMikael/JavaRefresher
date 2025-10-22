@@ -22,7 +22,22 @@ public class Recursion {
 		 * 
 		 */
 
-		walk(5);
+	walk(5);
+	System.out.println(	factorial(7)); //factorial of a number
+	System.out.println(power(2, 8)); // raising a number to power
+	
+	}
+
+	private static int power(int base, int exponent) {
+		
+		if(exponent < 1 ) return 1; //base case
+		return base * power (base, exponent - 1); //recursive method
+	}
+
+	private static int factorial(int number) {
+		if(number < 1) return 1; //base case
+		return number * factorial(number - 1); //recursive case
+
 	}
 
 	private static void walk(int steps) {
