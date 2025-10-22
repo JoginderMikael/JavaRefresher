@@ -8,7 +8,8 @@ public class BubbleSortALG {
 		/*
 		 * Bubble Sort - compares two adjacent elements and swaps them based on which is greater than the other. 
 		 * It has bad both time and space complexity
-		 * Time complexity is O(n^2)
+		 * Time complexity is O(n^2) - Quadratic
+		 * 
 		 * 
 		 */
 		
@@ -17,7 +18,7 @@ public class BubbleSortALG {
 		
 		bubbleSort(array);
 		
-		//Arrays.sort(array);
+		//Arrays.sort(array); //better way to do it. 
 		
 		System.out.println(Arrays.toString(array));
 
