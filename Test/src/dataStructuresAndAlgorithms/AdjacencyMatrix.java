@@ -43,6 +43,17 @@ public class AdjacencyMatrix {
 		 * backtrack to previous node with unvisited adjacent neighbors. 
 		 */
 		graph.depthFirstSearch(0);
+		
+		System.out.println();
+		
+		/*
+		 * Breadth first search
+		 * Traverses a graph level by level
+		 * Utilizes a queue
+		 * Better if destination is on average close to start
+		 * Siblings are visited before children
+		 */
+		graph.breadthFirstSearch(0);
 
 	}
 
