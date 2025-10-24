@@ -44,4 +44,33 @@ public class Graph {
 			System.out.println();
 		}
 	}
+	
+	/*
+	 * depth first search Algorithm
+	 * 
+	 * Pick a route, keep going. 
+	 * If you reach a dead end, or an already visited node, 
+	 * backtrack to previous node with unvisited adjacent neighbors. 
+	 */
+	public void depthFirstSearch(int src) {
+		boolean[] visited = new boolean[matrix.length];
+		dFSHelper(src, visited);
+	}
+
+	private void dFSHelper(int src, boolean[] visited) {
+		if(visited[src]) {
+			return;
+		}else {
+			visited[src] = true;
+			System.out.println(nodes.get(src).data + " = Visited");
+		}
+		
+		for(int i = 0; i < matrix[src].length; i++) {
+			if(matrix[src][i] == 1) {
+				dFSHelper(i, visited);
+			}
+		}
+		
+		return;
+	}
 }

@@ -33,7 +33,16 @@ public class AdjacencyMatrix {
 		
 		graph.print();
 		
-		System.out.println(graph.checkEdge(3, 2));
+		//System.out.println(graph.checkEdge(3, 2));
+		
+		/*
+		 * depth first search Algorithm
+		 * 
+		 * Pick a route, keep going. 
+		 * If you reach a dead end, or an already visited node, 
+		 * backtrack to previous node with unvisited adjacent neighbors. 
+		 */
+		graph.depthFirstSearch(4);
 
 	}
 
