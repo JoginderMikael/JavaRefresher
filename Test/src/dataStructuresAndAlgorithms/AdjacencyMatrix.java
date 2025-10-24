@@ -32,7 +32,7 @@ public class AdjacencyMatrix {
 		
 		
 		graph.print();
-		
+		System.out.println();
 		//System.out.println(graph.checkEdge(3, 2));
 		
 		/*
@@ -42,7 +42,7 @@ public class AdjacencyMatrix {
 		 * If you reach a dead end, or an already visited node, 
 		 * backtrack to previous node with unvisited adjacent neighbors. 
 		 */
-		graph.depthFirstSearch(4);
+		graph.depthFirstSearch(0);
 
 	}
 
