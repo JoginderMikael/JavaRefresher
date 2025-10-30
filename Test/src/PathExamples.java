@@ -53,7 +53,7 @@ public class PathExamples {
 				Files.createFile(fileInDir);
 				System.out.println("File created at: " + fileInDir.toAbsolutePath());
 			} catch (Exception e) {
-				e.printStackTrace();
+				System.out.println("Error creating file: " + e.getMessage());
 			}
 			//System.out.println("File creation failed.");
 		}
