@@ -1,12 +1,12 @@
 package threading;
 
-class A extends Thread {
+class A implements Runnable {
 	public void run() {
 		for (int i = 1; i <= 100; i++) {
 			System.out.println("From A: " + i);
 			
 			try {
-				Thread.sleep(500);
+				Thread.sleep(10);
 			} catch (InterruptedException e) {
 				System.out.println(e);
 			}
@@ -15,13 +15,13 @@ class A extends Thread {
 	}
 }
 
-class B extends Thread {
+class B implements Runnable {
 	public void run() {
 		for (int i = 1; i <= 100; i++) {
 			System.out.println("From B: " + i);
 			
 			try {
-				Thread.sleep(500);
+				Thread.sleep(10);
 			} catch (InterruptedException e) {
 				System.out.println(e);
 			}
@@ -34,11 +34,14 @@ public class MultThread {
 	
 
 	public static void main(String[] args) {
-		A threadA = new A();
-		B threadB = new B();
+		Runnable threadA = new A();
+		Runnable threadB = new B();
+		
+		Thread t1 = new Thread(threadA);
+		Thread t2 = new Thread(threadB);
 
-		threadA.start();
-		threadB.start();
+		t1.start();
+		t2.start();
 
 	}
 
